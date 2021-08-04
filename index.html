@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Datatable</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
+
+    <link href="https://nightly.datatables.net/rowgroup/css/rowGroup.dataTables.css?_=bc3763029fa6dfaf4c947ef25f079107.css" rel="stylesheet" type="text/css" />
+    <script src="https://nightly.datatables.net/rowgroup/js/dataTables.rowGroup.js?_=bc3763029fa6dfaf4c947ef25f079107"></script>
+    <meta charset=utf-8 />
+</head>
+<body>
+    <div id="root">
+        <table id="example">
+           <thead>
+              <tr>
+                 <th class="sorter-false"><span class="tracker-expand expand-all"><i class="far fa-plus-square"></i></span></th>
+                 <th>Full Name</th>
+                 <th style="text-align:left;">First Name</th>
+                 <th class="table-left" style="text-align:left;">Last Name</th>
+                 <th class="rotate">
+                    <div><span><abbr title="Digital Devices 1">Digital Devices 1</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Digital Devices 2">Digital Devices 2</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Uses of Digital Devices 1">Uses of Digita...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Uses of Digital Devices 2">Uses of Digita...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Input &amp; Output Devices">Input &amp; Ou...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Storage Devices">Storage Devices</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data Processing &amp; Accessibility Devices">Data Processin...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Types &amp; Role of Operating Systems">Types &amp; Ro...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Choice &amp; Use of User Interfaces">Choice &amp; U...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Performance of Operating Systems">Performance of...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Application Software">Application So...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Image &amp; Video File Types">Image &amp; Vi...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Application File Types &amp; Licences">Application Fi...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Implications of Emerging Technologies">Implications o...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Factors Affecting Choice of IT System">Factors Affect...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Wired Methods of Connecting Devices">Wired Methods ...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Wireless Methods of Connecting Devices">Wireless Metho...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Types of Networks">Types of Networks</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Factors Affecting Choice of Network">Factors Affect...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data Transmission Protocols">Data Transmiss...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data Transmission Security Issues">Data Transmiss...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Bandwidth, Latency &amp; Compression">Bandwidth, Lat...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Using Online Systems">Using Online S...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Remote Working &amp; Choosing Online Systems">Remote Working...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Interacting with Online Communities">Interacting wi...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Implications of Online Communities 1">Implications o...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Implications of Online Communities 2">Implications o...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Implication of Threats">Implication of...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Protecting Data Techniques">Protecting Dat...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Protecting Data Tools">Protecting Dat...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Features of Online Services">Features of On...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Uses of Online Services">Uses of Online...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Features of IT Systems 1">Features of IT...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Features of IT Systems 2">Features of IT...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Impact of IT Systems">Impact of IT S...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data Sources">Data Sources</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Processing &amp; Presenting Data">Processing &amp;am...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data Collection User Interfaces">Data Collectio...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Moral &amp; Ethical Factors 1">Moral &amp; Et...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Moral &amp; Ethical Factors 2">Moral &amp; Et...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Data &amp; User Protection Legislation">Data &amp; Use...</abbr></span></div>
+                 </th>
+                 <th class="rotate">
+                    <div><span><abbr title="Accessibility Legislation &amp; Guidelines">Accessibility ...</abbr></span></div>
+                 </th>
+              </tr>
+           </thead>
+           <tbody>
+              <tr class="parentRow">
+                 <td data-user="134935"><span class="tracker-expand"><i class="far fa-plus-square"></i></span></td>
+                 <td>Usman Akhtar</td>
+                 <td data-label="First Name" style="text-align:left;">Usman</td>
+                 <td class="breakline" data-label="Last Name" style="text-align:left;">Akhtar</td>
+                 <td><a href="#" data-ref-id="4686706" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:17">80%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4686928" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:21">80%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4687339" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:26">80%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4687612" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:30">90%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4531768" class="high show-answers"><abbr title="Completed: 12/11/20 | 09:02">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4532032" class="high show-answers"><abbr title="Completed: 12/11/20 | 09:09">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4651081" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:18">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4688122" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:36">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4688209" class="low show-answers"><abbr title="Completed: 18/11/20 | 15:37">40%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4651507" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:23">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4652020" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:29">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4682167" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:27">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4683040" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:36">100%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4652794" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:39">80%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4653286" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:44">100%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4681555" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:22">100%</abbr></a></td>
+              </tr>
+              <tr>
+                 <td></td>
+                 <td>Usman Akhtar</td>
+                 <td></td>
+                 <td class="breakline"></td>
+                 <td><a href="#" data-ref-id="4683349" class="low show-answers"><abbr title="Completed: 18/11/20 | 14:39">40%</abbr></a></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4687156" class="low show-answers"><abbr title="Completed: 18/11/20 | 15:24">40%</abbr></a></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4531720" class="medium show-answers"><abbr title="Completed: 12/11/20 | 09:00">50%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4531966" class="medium show-answers"><abbr title="Completed: 12/11/20 | 09:08">60%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4651012" class="high show-answers"><abbr title="Completed: 17/11/20 | 14:17">80%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4687978" class="low show-answers"><abbr title="Completed: 18/11/20 | 15:34">40%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4651327" class="medium show-answers"><abbr title="Completed: 17/11/20 | 14:21">60%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4651909" class="medium show-answers"><abbr title="Completed: 17/11/20 | 14:27">60%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4681918" class="low show-answers"><abbr title="Completed: 18/11/20 | 14:25">40%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4682644" class="low show-answers"><abbr title="Completed: 18/11/20 | 14:32">40%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4652608" class="medium show-answers"><abbr title="Completed: 17/11/20 | 14:37">60%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4653112" class="medium show-answers"><abbr title="Completed: 17/11/20 | 14:43">60%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4681342" class="medium show-answers"><abbr title="Completed: 18/11/20 | 14:20">70%</abbr></a></td>
+              </tr>
+              <tr>
+                 <td></td>
+                 <td>Usman Akhtar</td>
+                 <td></td>
+                 <td class="breakline"></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4531648" class="medium show-answers"><abbr title="Completed: 12/11/20 | 08:57">60%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4531861" class="low show-answers"><abbr title="Completed: 12/11/20 | 09:05">40%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4650928" class="medium show-answers"><abbr title="Completed: 17/11/20 | 14:16">60%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4652938" class="low show-answers"><abbr title="Completed: 17/11/20 | 14:41">20%</abbr></a></td>
+                 <td><a href="#" data-ref-id="4680481" class="low show-answers"><abbr title="Completed: 18/11/20 | 14:12">30%</abbr></a></td>
+              </tr>
+              <tr>
+                 <td></td>
+                 <td>Usman Akhtar</td>
+                 <td></td>
+                 <td class="breakline"></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4531603" class="medium show-answers"><abbr title="Completed: 12/11/20 | 08:54">50%</abbr></a></td>
+                 <td></td>
+                 <td><a href="#" data-ref-id="4650511" class="low show-answers"><abbr title="Completed: 17/11/20 | 14:10">30%</abbr></a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+              </tr>
+              <tr class="parentRow">
+                 <td data-user="134944"><span class="tracker-expand"><i class="far fa-plus-square"></i></span></td>
+                 <td>Luke Bonaci</td>
+                 <td data-label="First Name" style="text-align:left;">Luke</td>
+                 <td class="breakline" data-label="Last Name" style="text-align:left;">Bonaci</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+              </tr>
+              <tr class="parentRow">
+         <td data-user="134938"><span class="tracker-expand"><i class="far fa-plus-square"></i></span></td>
+         <td>Jack Bailey</td>
+         <td data-label="First Name" style="text-align:left;">Jack</td>
+         <td class="breakline" data-label="Last Name" style="text-align:left;">Bailey</td>
+         <td><a href="#" data-ref-id="4385425" class="high show-answers"><abbr title="Completed: 05/11/20 | 10:40">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4385560" class="high show-answers"><abbr title="Completed: 05/11/20 | 10:44">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624372" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:07">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624594" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:12">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624708" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:17">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624798" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:21">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624858" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:24">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626031" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:12">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626121" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:15">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626214" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:20">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626349" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:28">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626385" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:30">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626469" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:34">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626544" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:38">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626655" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:42">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4681027" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:16">100%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>Jack Bailey</td>
+         <td></td>
+         <td class="breakline"></td>
+         <td><a href="#" data-ref-id="4385332" class="high show-answers"><abbr title="Completed: 05/11/20 | 10:38">80%</abbr></a></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4624279" class="low show-answers"><abbr title="Completed: 16/11/20 | 19:04">40%</abbr></a></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4624666" class="medium show-answers"><abbr title="Completed: 16/11/20 | 19:15">50%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624777" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:20">90%</abbr></a></td>
+         <td><a href="#" data-ref-id="4624834" class="high show-answers"><abbr title="Completed: 16/11/20 | 19:23">80%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4626190" class="medium show-answers"><abbr title="Completed: 16/11/20 | 20:18">60%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626322" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:27">90%</abbr></a></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4626448" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:33">80%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626529" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:37">90%</abbr></a></td>
+         <td><a href="#" data-ref-id="4626634" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:41">80%</abbr></a></td>
+         <td><a href="#" data-ref-id="4680772" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:14">100%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>Jack Bailey</td>
+         <td></td>
+         <td class="breakline"></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4626262" class="high show-answers"><abbr title="Completed: 16/11/20 | 20:23">90%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4680556" class="low show-answers"><abbr title="Completed: 18/11/20 | 14:12">0%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr class="parentRow">
+         <td data-user="134941"><span class="tracker-expand"><i class="far fa-plus-square"></i></span></td>
+         <td>Matthew Barnett</td>
+         <td data-label="First Name" style="text-align:left;">Matthew</td>
+         <td class="breakline" data-label="Last Name" style="text-align:left;">Barnett</td>
+         <td><a href="#" data-ref-id="4403278" class="high show-answers"><abbr title="Completed: 05/11/20 | 16:58">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4531441" class="high show-answers"><abbr title="Completed: 12/11/20 | 08:34">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4549756" class="high show-answers"><abbr title="Completed: 12/11/20 | 14:41">80%</abbr></a></td>
+         <td><a href="#" data-ref-id="4550818" class="high show-answers"><abbr title="Completed: 12/11/20 | 15:00">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4573843" class="high show-answers"><abbr title="Completed: 13/11/20 | 13:32">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4585267" class="high show-answers"><abbr title="Completed: 14/11/20 | 14:28">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4641136" class="high show-answers"><abbr title="Completed: 17/11/20 | 11:48">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4643851" class="high show-answers"><abbr title="Completed: 17/11/20 | 12:07">90%</abbr></a></td>
+         <td><a href="#" data-ref-id="4645066" class="high show-answers"><abbr title="Completed: 17/11/20 | 12:18">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4646554" class="high show-answers"><abbr title="Completed: 17/11/20 | 12:43">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4657636" class="high show-answers"><abbr title="Completed: 17/11/20 | 18:04">80%</abbr></a></td>
+         <td><a href="#" data-ref-id="4657777" class="high show-answers"><abbr title="Completed: 17/11/20 | 18:21">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4684258" class="high show-answers"><abbr title="Completed: 18/11/20 | 14:46">90%</abbr></a></td>
+         <td><a href="#" data-ref-id="4686004" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:04">100%</abbr></a></td>
+         <td><a href="#" data-ref-id="4686820" class="high show-answers"><abbr title="Completed: 18/11/20 | 15:19">100%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>Matthew Barnett</td>
+         <td></td>
+         <td class="breakline"></td>
+         <td><a href="#" data-ref-id="4403218" class="medium show-answers"><abbr title="Completed: 05/11/20 | 16:54">70%</abbr></a></td>
+         <td><a href="#" data-ref-id="4531417" class="medium show-answers"><abbr title="Completed: 12/11/20 | 08:30">60%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4584943" class="medium show-answers"><abbr title="Completed: 14/11/20 | 13:58">50%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4646497" class="medium show-answers"><abbr title="Completed: 17/11/20 | 12:43">70%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td><a href="#" data-ref-id="4685932" class="medium show-answers"><abbr title="Completed: 18/11/20 | 15:03">70%</abbr></a></td>
+         <td><a href="#" data-ref-id="4686757" class="medium show-answers"><abbr title="Completed: 18/11/20 | 15:18">60%</abbr></a></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+
+           </tbody>
+        </table>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var collapsedGroups = {};
+        var top = '';
+
+        var table = $('#example').DataTable({
+            columnDefs: [
+                {
+                    targets: [ 1 ],
+                    visible: false,
+                    searchable: false
+                }
+            ],
+            pageLength: 10,
+            orderFixed: [ 1, 'asc' ],
+            order: [
+                [1, 'asc']
+            ],
+            rowGroup: {
+                dataSrc: [1],
+                startRender: function(rows, group, level) {
+                    var all;
+                    let i, j;
+
+                    if (level === 0) {
+                        top = group;
+                        all = group;
+                    } else {
+                        // if parent collapsed, nothing to do
+                        if (!!collapsedGroups[top]) {
+                            return;
+                        }
+                        all = top + group;
+                    }
+
+                    var collapsed = !!collapsedGroups[all];
+
+                    const columnLength = rows.nodes()[0].children.length;
+                    const rowLength = rows.nodes().length;
+                    const scores = new Array(rowLength);
+                    let count = 0;
+                    const scoreLength = columnLength-3;
+                    rows.nodes().each(function(r) {
+                        r.style.display = collapsed ? 'none' : '';
+                        scores[count] = new Array(scoreLength);
+                        for (i = 0;i<scoreLength;i++) {
+                            const temp = r.children[i+3].innerText.match(/(\d+)\.?(\d*)/g);
+                            scores[count][i] = temp ? temp[0] : null;
+                        }
+                        count++;
+                    });
+                    const topScores = new Array(scoreLength).fill(null);
+                    for (i=0;i<scoreLength;i++) {
+                        for ( j = 0 ; j < rowLength ; j++) {
+                            if(scores[j][i]) {
+                                topScores[i] = topScores[i]===null ? scores[j][i] : parseFloat(topScores[i]) < parseFloat(scores[j][i]) ? parseFloat(scores[j][i]) : topScores[i];
+                            }
+                        }
+                    }
+                    // Add category name to the <tr>. NOTE: Hardcoded colspan
+                    // const fullName = rows.nodes()[0].children[1].innerText + ' ' + rows.nodes()[0].children[2].innerText;
+                    const tr = $('<tr/>')
+                        .append('<td colspan="3">' + group + '</td>'); //rows.nodes()[0].children.length
+                    for(i=0;i<scoreLength;i++) {
+                        const txt = topScores[i] === null ? '' : topScores[i] + '%';
+                        tr.append('<td colspan="1">' + txt + '</td>')
+                    }
+                    tr.attr('data-name', all)
+                        .toggleClass('collapsed', collapsed);
+                    return tr;
+                }
+            }
+        });
+
+        $('#example tbody').on('click', 'tr.dtrg-start', function() {
+            var name = $(this).data('name');
+
+            collapsedGroups[name] = !collapsedGroups[name];
+            table.draw(false);
+        });
+
+    });
+</script>
+</html>
